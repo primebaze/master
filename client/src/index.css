@@ -1,0 +1,329 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+padding: 0;
+}
+
+h1 {
+  font-size: 2.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main {
+  font-family: "Inter", sans-serif;
+  background-color: var(--main-bg);
+  color: var(--main-color);
+}
+
+.container {
+  display: flex;
+  max-width: 1100px;
+}
+
+.menuContainer {
+  width: 200px;
+  padding: 5px 20px;
+  border-right: 2px solid var(--soft-bg);
+}
+
+@media screen and (max-width: 1024px) {
+  .menuContainer {
+    width: max-content;
+  }
+}
+
+.contentContainer {
+  width: 100%;
+  margin-left: 80px;
+}
+
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  gap: 10px;
+}
+
+.navbar .icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar .icons .icon {
+  display: none;
+}
+
+.navbar .icons .notification {
+  position: relative;
+}
+
+.navbar .icons .notification span {
+  background-color: red;
+  color: white;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.navbar .icons .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar .icons .user img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.navbar .searchbar{
+  width: 430px;
+  color: #ffffff;
+}
+/* Menu */
+
+.menu .MenuImage{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.menu .button-wrapper{
+  display: flex;
+  gap: 5px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.menu .item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.menu .item .title {
+  font-size: 12px;
+  font-weight: 200;
+  color: var(--soft-color);
+  text-transform: uppercase;
+  
+}
+@include lg {
+  .menu .item .title {
+    display: none;
+  }
+}
+
+.menu .item .listItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu .item .listItem:hover {
+  background-color: var(--soft-bg);
+}
+
+.menu .item .listItem .listItemTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@include lg {
+  .menu .item .listItem .listItemTitle {
+    display: none;
+  }
+}
+/* Sign in */
+.signin-container{
+  align-items: center;
+  justify-content: center;
+}
+.image-container{
+  flex:1;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+.signin-image{
+
+  width: 100%;
+  height: 100%;
+
+
+
+}
+.login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 90px;
+  
+}
+
+.lContainer {
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+.lInput{
+  height: 30px;
+  width: 350px;
+  padding: 10px;
+}
+
+.lButton {
+  border: none;
+  padding: 10px 20px;
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.lButton:disabled{
+  background-color: #0071c28c;
+  cursor: not-allowed;
+}
+.welcome{
+  text-align: center;
+}
+
+.signup-link{
+  text-align: center;
+}
+
+/* Dashboard  */
+.dashboard{
+  text-align: left;
+  margin-left: 40px;
+}
+.progress{
+  text-align: left;
+  margin-top: 20px;
+}
+.name{
+  text-align: left;
+  margin-top: 20px;
+}
+.box-wrapper{
+  display: flex;
+  gap: 50px;
+}
+.box{
+  display: flex;
+  width: 350px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  border-radius: 5px;
+  background-color: #0071c2;
+  height: 90px;
+}
+
+/* Quiz */
+.answer-section{
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+.question-text{
+  margin-top: 20px;
+}
+.question-count{
+  margin-top: 20px;
+}
+.score-section{
+  margin-top: 50px;
+}
+.restart{
+  margin-top: 50px;
+}
