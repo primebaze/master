@@ -1,9 +1,11 @@
 
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, } from "@reduxjs/toolkit";
 
 const initialState = {
   isAuthenticated: false,
-  username: "", 
+  fullname: "", 
+  current_status :"",
+  profileImage: "", 
 };
 
 const authSlice = createSlice({
@@ -12,15 +14,22 @@ const authSlice = createSlice({
   reducers: {
     login(state, action) {
       state.isAuthenticated = true;
-      state.username = action.payload.username; 
+      state.fullname = action.payload.fullname; 
+      state.current_status = action.payload.current_status; 
     },
     logout(state) {
       state.isAuthenticated = false;
-      state.username = ""; 
+      state.fullname = ""; 
+      state.current_status = "";
+      state.profileImage = ""; 
     },
+    setProfileImage(state, action) {
+      state.profileImage = action.payload;
+    },
+
   },
 });
 
-export const { login, logout } = authSlice.actions;
+export const { login, logout,setProfileImage } = authSlice.actions;
 export const selectAuth = (state) => state.auth;
 export default authSlice.reducer;

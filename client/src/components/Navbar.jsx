@@ -2,6 +2,8 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { logout } from "../redux/authSlice";
+import { useState } from "react";
+import MenuIcon from '@mui/icons-material/Menu';
 function Navbar() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -9,12 +11,14 @@ function Navbar() {
     dispatch(logout());
     navigate("/signin");
   };
-
+  const [menuOpen, setMenuOpen] = useState(false); 
   return (
     <div className="navbar">
-      <div className="logo">
-        <img src="logo.svg" alt="" />
-        <span>Anatomy ECMS</span>
+      <div >
+        <img src="logo.png" alt="" style={{height:50,width:120,objectFit:"contain"}} />
+      </div>
+      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        <MenuIcon/>
       </div>
       <div className="searchbar">
         <input
@@ -42,7 +46,6 @@ function Navbar() {
           <Link to="/">
             <span>Home</span>
           </Link>
-          <span>Profile</span>
           <Link to="/quiz">
             <span>Quiz</span>
           </Link>

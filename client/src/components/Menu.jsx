@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import { selectAuth } from "../redux/authSlice"; 
+import { useSelector } from "react-redux";
 const menu = [
   {
     id: 1,
@@ -7,13 +9,13 @@ const menu = [
       {
         id: 1,
         title: "Histology",
-        url: "/",
+        url: "/histology",
         icon: "home.svg",
       },
       {
         id: 2,
         title: "3DModels",
-        url: "/users/1",
+        url: "/three",
         icon: "user.svg",
       },
     ],
@@ -25,13 +27,13 @@ const menu = [
       {
         id: 1,
         title: "Embryology",
-        url: "/users",
+        url: "/embryology",
         icon: "user.svg",
       },
       {
         id: 2,
         title: "Gross Anatomy",
-        url: "/products",
+        url: "/gross",
         icon: "product.svg",
       },
 
@@ -39,42 +41,39 @@ const menu = [
   },
 ];
 
-
-
-
-
-
 function Menu() {
+  const { fullname, current_status} = useSelector(selectAuth);
+
+  const userDetails = localStorage.getItem('userDetails') ? JSON.parse(localStorage.getItem('userDetails')) : null;
+  
   return (
     <div className="menu">
-          <img
-          className="MenuImage"
-          src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGRvY3RvcnxlbnwwfHwwfHx8MA%3D%3D"
-          alt=""
-        />
-        <h4>Adam Smith</h4>
-        <h5>2nd year medical student</h5>
-        <div className="button-wrapper">
-        <button  className="lButton">
+      <img className="MenuImage" src={userDetails?.profileImager} alt="Profile" />
+      <h4>{userDetails?.fullname}</h4>
+      <h5 style={{marginTop:5,color:" #0071c2"}}>{userDetails?.current_status}</h5>
+      <div className="button-wrapper">
+        <Link to ="/forum">
+          <button  className="lButton">
             Forum
           </button>
+        </Link>
+        <Link to ="/quiz">
           <button  className="lButton">
-            Courses
+            Quiz
           </button>
-        </div>
-    {menu.map((item) => (
-      <div className="item" key={item.id}>
-      
-        {item.listItems.map((listItem) => (
-          <Link to={listItem.url} className="listItem" key={listItem.id}>
-        
-            <span className="listItemTitle">{listItem.title}</span>
-          </Link>
-        ))}
+        </Link>
       </div>
-    ))}
-  </div>
+      {menu.map((item) => (
+        <div className="item" key={item.id}>
+          {item.listItems.map((listItem) => (
+            <Link to={listItem.url} className="listItem" key={listItem.id}>
+              <span className="listItemTitle">{listItem.title}</span>
+            </Link>
+          ))}
+        </div>
+      ))}
+    </div>
   )
 }
 
-export default Menu
+export default Menu;
