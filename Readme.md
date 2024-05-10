@@ -15,9 +15,9 @@ Installation: to run my app on your computer, please follow these steps;
     ```
 3. After all dependencies are installed start the application using 
 
-```bash
-npm run dev
-```
+    ```bash
+    npm run dev
+    ```
 
 # Features
 Comprehensive Course Materials: I've carefully curated text-based lessons, detailed illustrations, and engaging videos covering all major anatomical systems.
