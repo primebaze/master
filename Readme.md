@@ -33,9 +33,7 @@ Installation: to run my app on your computer, please follow these steps;
 
 ## Start The Application
 
-    ```
-    npm start
-    ```
+    ```npm start```
 
 
 # Features
