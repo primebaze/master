@@ -40,7 +40,8 @@ function Signin() {
     <div className="signin-container">
       <div className="login">
         <div className="lContainer">
-          <h1 className="welcome">Welcome</h1>
+          <h1 className="welcome">Anatomy Hub</h1>
+          
           <input
             type="text"
             placeholder="Email"

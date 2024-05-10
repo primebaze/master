@@ -188,7 +188,7 @@ function Test() {
 
   return (
     <div>
-      <h1 style={{textAlign:"center"}}>Histology</h1>
+     <h1 style={{marginTop:30}}>Histology</h1>
       <h2 style={{marginTop: 30}}>Quiz</h2>
           <Quiz questions={questions} />
       <div>

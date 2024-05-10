@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import handImage from "../assets/hand.jpeg";
 import skul2Image from "../assets/skul_2.jpg";
 import skul2Image2 from "../assets/skul 2.jpg";
+import hub from "../assets/hub.png";
 
 function Home() {
   const { isAuthenticated, fullname } = useSelector(selectAuth);
@@ -19,6 +20,7 @@ function Home() {
           marginTop: 30,
           backgroundColor: "#24282d",
           height: "80vh",
+          width:"100%",
           borderRadius: 10,
           padding: 20,
         }}
@@ -35,17 +37,31 @@ function Home() {
             </p>
           </div>
           <div className="box">
-            <img src={skul2Image} alt="" className="box-image" />
+            <img src={hub} alt="" className="box-image" />
             <p className="box-para">
-              We're refining the percentile calculations for more accurate
-              progress tracking and exam correlation.
+              View all course materials related to Anatomy
+              <br/> <br/>90% of our users pass their Anatomy exams in flying colors  
+              <br/>
+              <Link to ="/quiz">
+          <button  className="passButton">
+             Courses
+          </button>
+          <br/>
+        </Link>
             </p>
+          
           </div>
           <div className="box">
             <img src={skul2Image2} alt="" className="box-image" />
             <p className="box-para">
-              We're refining the percentile calculations for more accurate
-              progress tracking and exam correlation.
+            <h4>Reach your study goal!</h4><br/>
+Begin your journey with AnatomyHub by starting a Quiz session.
+<br/><br/>
+<Link to ="/quiz">
+          <button  className="lButton">
+            Quiz
+          </button>
+        </Link>
             </p>
           </div>
         </div>

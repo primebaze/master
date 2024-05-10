@@ -312,7 +312,9 @@ a {
 }
 /* Sign in */
 .signin-container {
-  background-image: url("https://primebaze.net/anatomy/ANATOMY2.jpg");
+  background-image: url("./assets/signupbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   align-items: center;
   justify-content: center;
 }
@@ -331,6 +333,7 @@ a {
   align-items: center;
   justify-content: center;
   margin-right: 90px;
+  background-color:;
 }
 
 .lContainer {
@@ -400,15 +403,16 @@ a {
   display: flex;
   gap: 30px;
 }
+/* box para width */
 .box {
   width: 250px;
-  margin-top: 30px;
+  margin-top: 10px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #1a1c1c;
-  height:340px;
+  height:400px;
 }
 .box-image{
   height: 200px;
@@ -456,7 +460,24 @@ a {
 .contentContainer{
 width: 100%;
 }
+/* Dasboard content */
 .box-para{
   margin-top: 10px;
-  text-align: center;
+  text-align: left;
+  padding: 20px;
+}
+.passButton {
+  border: none;
+  width: 150px;
+  padding: 10px 50px;
+  background-color: #111a20;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center; 
+}
+.box-image2{
+  height: 2520px;
+  width: 200px;
 }
