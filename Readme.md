@@ -5,10 +5,11 @@ Universities or other higher learning institutions
 
 # Getting Started
 
-Installation: to run my app on your compute, please follow these steps;
+Installation: to run my app on your computer, please follow these steps;
 
 1. after cloning my github repo, open the folders on Vscode
-2. cd into the client 
+2. cd into the client folder via terminal and install dependencies using npm:
+    ```npm install
 
 
 # Features
