@@ -53,7 +53,7 @@ Navigating AnatomyHub is easy! (survey from over 100 testers)
 
 Use the main menu to find courses, access your dashboard, or explore the 3D model library.
 Within courses, use the side navigation to jump between lessons.
-Quizzes launch automatically at the end of each section.
+You may launch a quiz at the end of each study section.
 
 # References
 
