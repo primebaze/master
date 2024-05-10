@@ -1,6 +1,6 @@
 # AnatomyHub
 
-AnatomyHub is an Educational CMS I developed specifically designed to make learning human anatomy engaging and effective for anatomy students in 
+AnatomyHub is an Educational CMS I developed and specifically designed to make learning human anatomy engaging and effective for anatomy students in 
 Universities or other higher learning institutions
 
 # Getting Started
