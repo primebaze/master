@@ -49,7 +49,7 @@ The dashboard displays course progress and quiz scores, so users can easily stay
 Explore rotatable, interactive 3D models of bones, organs, and entire systems to enhance your spatial understanding.
 
 ## Study and Course Materials: 
-I have uploaded various course materials that covers all areas of human anatomy. 
+I have uploaded various course materials that covers all areas of human anatomy. These materials were gotten from the best anatomy teaching universities in the world.
 
 ## Using AnatomyHub
 Navigating AnatomyHub is easy! (survey from over 100 testers)
