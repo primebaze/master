@@ -7,8 +7,12 @@ Universities or other higher learning institutions
 
 Installation: to run my app on your computer, please follow these steps;
 
-1. after cloning my github repo, open the folders on Vscode
-2. cd into the client folder via terminal and install dependencies using npm:
+1. After cloning my github repo, open the folders on Vscode
+ - Make sure to have xampp installed on your pc
+ - download the database file ```anatomy.sql``` 
+ - run xampp and upload to xampp (make sure to keep xampp running)
+
+2. cd into the client folder via terminal ```cd client``` and install dependencies using npm:
     ## Client
 
     ```bash 
@@ -19,7 +23,20 @@ Installation: to run my app on your computer, please follow these steps;
     ```bash
     npm run dev
     ```
-# 
+    ## Server
+
+4. goto a new terminal and cd into the server folder ```cd server``` and install dependencies using npm:
+
+    ```bash
+    npm install
+    ```
+
+## Start The Application
+
+    ``` bash 
+    npm start
+    ```
+
 
 # Features
 Comprehensive Course Materials: I've carefully curated text-based lessons, detailed illustrations, and engaging videos covering all major anatomical systems.
