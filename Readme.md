@@ -37,18 +37,19 @@ Installation: to run my app on your computer, please follow these steps;
 
 
 # Features
-Comprehensive Course Materials: I've carefully curated text-based lessons, detailed illustrations, and engaging videos covering all major anatomical systems.
+Comprehensive Course Materials: I've carefully curated study materials, detailed illustrations covering all major anatomical topics and subject areas.
 
 ## Interactive Quizzes: 
-Test your knowledge with quizzes after each section. These feature multiple-choice, image-labeling, and short answer formats.
+Test your knowledge with quizzes after each section. These features multiple-choice questions.
 
 ## Progress Tracking: 
 The dashboard displays course progress and quiz scores, so users can easily stay on track.
 
 ## Detailed 3D Models: 
 Explore rotatable, interactive 3D models of bones, organs, and entire systems to enhance your spatial understanding.
-Using AnatomyHub
-Navigating AnatomyHub is easy!
+
+## Using AnatomyHub
+Navigating AnatomyHub is easy! (survey from over 100 testers)
 
 Use the main menu to find courses, access your dashboard, or explore the 3D model library.
 Within courses, use the side navigation to jump between lessons.
