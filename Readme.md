@@ -33,7 +33,7 @@ Installation: to run my app on your computer, please follow these steps;
 
 ## Start The Application
 
-    ``` bash 
+    ```
     npm start
     ```
 
