@@ -10,7 +10,7 @@ Installation: to run my app on your computer, please follow these steps;
 1. After cloning my github repo, open the folders on Vscode
  - Make sure to have xampp installed on your pc
  - download the database file ```anatomy.sql``` 
- - run xampp and upload to xampp (make sure to keep xampp running)
+ - run xampp and upload to phpmyadmin (make sure to keep xampp running)
 
 2. cd into the client folder via terminal ```cd client``` and install dependencies using npm:
     ## Client
