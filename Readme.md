@@ -9,6 +9,7 @@ Installation: to run my app on your computer, please follow these steps;
 
 1. after cloning my github repo, open the folders on Vscode
 2. cd into the client folder via terminal and install dependencies using npm:
+    # Client
 
     ```bash 
     npm install
@@ -18,6 +19,7 @@ Installation: to run my app on your computer, please follow these steps;
     ```bash
     npm run dev
     ```
+# 
 
 # Features
 Comprehensive Course Materials: I've carefully curated text-based lessons, detailed illustrations, and engaging videos covering all major anatomical systems.
