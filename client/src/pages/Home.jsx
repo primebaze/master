@@ -19,7 +19,7 @@ function Home() {
         style={{
           marginTop: 30,
           backgroundColor: "#24282d",
-          height: "80vh",
+          height: "90vh",
           width:"100%",
           borderRadius: 10,
           padding: 20,
