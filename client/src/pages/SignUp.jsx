@@ -28,44 +28,14 @@ const Signup = () => {
   const [error, setError] = useState(null);
   const [profileImager, setProfileImager] = useState(null);
 
-  const handleChange = (value, field) => {
-    let newValue = value;
-    let newError = null;
-  
-    // Validation logic for each field
-    switch (field) {
-      case 'email':
-        if (!value.trim()) {
-          newError = "Email is required.";
-        } else if (!/\S+@\S+\.\S+/.test(value)) {
-          newError = "Please enter a valid email address.";
-        }
-        break;
-      case 'password':
-        if (!value.trim()) {
-          newError = "Password is required.";
-        } else if (value.trim().length < 6) {
-          newError = "Password must be at least 6 characters long.";
-        }
-        break;
-      case 'expected_graduation_year':
-        if (isNaN(value)) {
-          newError = "Expected graduation year must be a number.";
-        }
-        break;
-      default:
-        break;
-    }
-  
-    // Update state based on validation
+  const handleChange = (selectedOption, field) => {
+    const selectedValue = Array.isArray(selectedOption) ? selectedOption[0].value : selectedOption;
     setUserData((prev) => ({
       ...prev,
-      [field]: newValue,
+      [field]: selectedValue,
     }));
-  
-    setError(newError);
   };
-  
+
   const handleImageChange = (e) => {
     const file = e.target.files[0];
     const reader = new FileReader();
