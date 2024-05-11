@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { logout } from "../redux/authSlice";
 import { useState } from "react";
+import SearchBar from "./SearchBar"
 import MenuIcon from '@mui/icons-material/Menu';
 function Navbar() {
   const dispatch = useDispatch();
@@ -21,20 +22,7 @@ function Navbar() {
         <MenuIcon/>
       </div>
       <div className="searchbar">
-        <input
-          type="text"
-          placeholder="Search Anatomical Materials, Courses, 3D Models, etc"
-          style={{
-            backgroundColor: "transparent",
-            borderColor: "white",
-            width: "100%",
-            maxWidth: "700px",
-            padding: "8px",
-            borderRadius: "4px",
-            outline: "none",
-            border: "1px solid white",
-          }}
-        />
+<SearchBar/>
       </div>
 
       <div className="icons">

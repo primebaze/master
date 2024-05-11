@@ -47,6 +47,7 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
+  z-index: 1;
   transition: border-color 0.25s;
 }
 
@@ -416,6 +417,7 @@ a {
 }
 .box-image{
   height: 200px;
+  object-fit: contain;
   width: 150px;
 }
 /* Quiz */
@@ -480,4 +482,18 @@ width: 100%;
 .box-image2{
   height: 2520px;
   width: 200px;
+}
+.search-results{
+  margin-top: 150px;
+}
+.search-input:focus{
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  font-size: 1.25rem;
+  width: 100%;
+  margin-left: 5px;
+}
+#dialog-demo{
+color: #fff;
 }

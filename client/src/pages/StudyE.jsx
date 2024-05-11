@@ -56,7 +56,7 @@ import { DocumentViewer } from "react-documents";
   
     return (
       <div>
-      <h2 style={{ marginTop: 30 }}>Study Materials</h2>
+      <h2 style={{ marginTop: 30 }}>Embryology Study Materials</h2>
       <div className="materials-wrapper">
         {data.map((item) => (
           <div key={item.id}>

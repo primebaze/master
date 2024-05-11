@@ -28,14 +28,51 @@ const Signup = () => {
   const [error, setError] = useState(null);
   const [profileImager, setProfileImager] = useState(null);
 
-  const handleChange = (selectedOption, field) => {
-    const selectedValue = Array.isArray(selectedOption) ? selectedOption[0].value : selectedOption;
+  const handleChange = (value, field) => {
+    let newValue = value;
+    let newError = null;
+  
+    // Validation logic for each field
+    switch (field) {
+      case 'email':
+        if (!value.trim()) {
+          newError = "Email is required.";
+        } else if (!/\S+@\S+\.\S+/.test(value)) {
+          newError = "Please enter a valid email address.";
+        }
+        break;
+      case 'password':
+        if (!value.trim()) {
+          newError = "Password is required.";
+        } else if (value.trim().length < 6) {
+          newError = "Password must be at least 6 characters long.";
+        }
+        break;
+        case 'university':
+      if (!value.trim()) {
+        newError = "University is required.";
+      } else if (!/^[a-zA-Z\s]*$/.test(value)) {
+        newError = "University must contain only letters and spaces.";
+      }
+      break;
+      case 'expected_graduation_year':
+        if (isNaN(value)) {
+          newError = "Expected graduation year must be a number.";
+        }
+        break;
+      default:
+        break;
+    }
+  
+    // Update state based on validation
     setUserData((prev) => ({
       ...prev,
-      [field]: selectedValue,
+      [field]: newValue,
     }));
+  
+    setError(newError);
   };
-
+  
   const handleImageChange = (e) => {
     const file = e.target.files[0];
     const reader = new FileReader();
@@ -93,7 +130,189 @@ const Signup = () => {
       value: "Canada",
       label: "Canada",
     },
+    // Add 50 most popular countries here
+    {
+      value: "China",
+      label: "China",
+    },
+    {
+      value: "India",
+      label: "India",
+    },
+    {
+      value: "Brazil",
+      label: "Brazil",
+    },
+    {
+      value: "Indonesia",
+      label: "Indonesia",
+    },
+    {
+      value: "Pakistan",
+      label: "Pakistan",
+    },
+    {
+      value: "Bangladesh",
+      label: "Bangladesh",
+    },
+    {
+      value: "Russia",
+      label: "Russia",
+    },
+    {
+      value: "Mexico",
+      label: "Mexico",
+    },
+    {
+      value: "Japan",
+      label: "Japan",
+    },
+    {
+      value: "Ethiopia",
+      label: "Ethiopia",
+    },
+    {
+      value: "Philippines",
+      label: "Philippines",
+    },
+    {
+      value: "Egypt",
+      label: "Egypt",
+    },
+    {
+      value: "Vietnam",
+      label: "Vietnam",
+    },
+    {
+      value: "DR Congo",
+      label: "DR Congo",
+    },
+    {
+      value: "Turkey",
+      label: "Turkey",
+    },
+    {
+      value: "Iran",
+      label: "Iran",
+    },
+    {
+      value: "Germany",
+      label: "Germany",
+    },
+    {
+      value: "Thailand",
+      label: "Thailand",
+    },
+    {
+      value: "United Kingdom",
+      label: "United Kingdom",
+    },
+    {
+      value: "France",
+      label: "France",
+    },
+    {
+      value: "Italy",
+      label: "Italy",
+    },
+    {
+      value: "Tanzania",
+      label: "Tanzania",
+    },
+    {
+      value: "South Africa",
+      label: "South Africa",
+    },
+    {
+      value: "Myanmar",
+      label: "Myanmar",
+    },
+    {
+      value: "Kenya",
+      label: "Kenya",
+    },
+    {
+      value: "South Korea",
+      label: "South Korea",
+    },
+    {
+      value: "Colombia",
+      label: "Colombia",
+    },
+    {
+      value: "Spain",
+      label: "Spain",
+    },
+    {
+      value: "Uganda",
+      label: "Uganda",
+    },
+    {
+      value: "Argentina",
+      label: "Argentina",
+    },
+    {
+      value: "Algeria",
+      label: "Algeria",
+    },
+    {
+      value: "Sudan",
+      label: "Sudan",
+    },
+    {
+      value: "Ukraine",
+      label: "Ukraine",
+    },
+    {
+      value: "Iraq",
+      label: "Iraq",
+    },
+    {
+      value: "Afghanistan",
+      label: "Afghanistan",
+    },
+    {
+      value: "Poland",
+      label: "Poland",
+    },
+    {
+      value: "Canada",
+      label: "Canada",
+    },
+    {
+      value: "Morocco",
+      label: "Morocco",
+    },
+    {
+      value: "Saudi Arabia",
+      label: "Saudi Arabia",
+    },
+    {
+      value: "Uzbekistan",
+      label: "Uzbekistan",
+    },
+    {
+      value: "Peru",
+      label: "Peru",
+    },
+    {
+      value: "Angola",
+      label: "Angola",
+    },
+    {
+      value: "Malaysia",
+      label: "Malaysia",
+    },
+    {
+      value: "Mozambique",
+      label: "Mozambique",
+    },
+    {
+      value: "Ghana",
+      label: "Ghana",
+    },
   ];
+  
 
   const status = [
     {
@@ -116,22 +335,7 @@ const Signup = () => {
       value: "Anatomy Graduate",
       label: "Anatomy Graduate",
     },
-    {
-      value: "Doctor",
-      label: "Doctor",
-    },
-    {
-      value: "MBBS Student",
-      label: "MBBS Student",
-    },
-    {
-      value: "Fellow",
-      label: "Fellow",
-    },
-    {
-      value: "Medical Student",
-      label: "Medical Student",
-    },
+
   ];
 
   return (
