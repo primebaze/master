@@ -48,13 +48,6 @@ const Signup = () => {
           newError = "Password must be at least 6 characters long.";
         }
         break;
-        case 'university':
-      if (!value.trim()) {
-        newError = "University is required.";
-      } else if (!/^[a-zA-Z\s]*$/.test(value)) {
-        newError = "University must contain only letters and spaces.";
-      }
-      break;
       case 'expected_graduation_year':
         if (isNaN(value)) {
           newError = "Expected graduation year must be a number.";
