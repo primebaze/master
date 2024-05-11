@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import handImage from "../assets/hand.jpeg";
 import skul2Image from "../assets/skul_2.jpg";
 import skul2Image2 from "../assets/skul 2.jpg";
-import hub from "../assets/hub.png";
+import hub from "../assets/hub.jpeg";
 
 function Home() {
   const { isAuthenticated, fullname } = useSelector(selectAuth);
