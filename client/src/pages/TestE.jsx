@@ -4,184 +4,184 @@ import Quiz from '../components/Quiz';
 function TestE() {
   const questions = [
     {
-      question: 'What type of epithelial tissue lines the inner surface of blood vessels?',
-      answers: [
-        { text: 'Simple squamous epithelium', isCorrect: true },
-        { text: 'Stratified squamous epithelium', isCorrect: false },
-        { text: 'Simple cuboidal epithelium', isCorrect: false },
-        { text: 'Stratified columnar epithelium', isCorrect: false },
-      ],
+        question: 'What is the term for the initial cell formed after fertilization?',
+        answers: [
+            { text: 'Zygote', isCorrect: true },
+            { text: 'Blastocyst', isCorrect: false },
+            { text: 'Morula', isCorrect: false },
+            { text: 'Gastrula', isCorrect: false },
+        ],
     },
     {
-      question: 'Which connective tissue cell produces collagen fibers?',
-      answers: [
-        { text: 'Fibroblasts', isCorrect: true },
-        { text: 'Osteoblasts', isCorrect: false },
-        { text: 'Chondrocytes', isCorrect: false },
-        { text: 'Adipocytes', isCorrect: false },
-      ],
+        question: 'Which germ layer gives rise to the nervous system?',
+        answers: [
+            { text: 'Ectoderm', isCorrect: true },
+            { text: 'Mesoderm', isCorrect: false },
+            { text: 'Endoderm', isCorrect: false },
+            { text: 'All of the above', isCorrect: false },
+        ],
     },
     {
-      question: 'What is the basic functional unit of the kidney?',
-      answers: [
-        { text: 'Nephron', isCorrect: true },
-        { text: 'Glomerulus', isCorrect: false },
-        { text: 'Renal corpuscle', isCorrect: false },
-        { text: 'Collecting duct', isCorrect: false },
-      ],
+        question: 'During which week of development does the heart begin to beat?',
+        answers: [
+            { text: 'Week 2', isCorrect: false },
+            { text: 'Week 4', isCorrect: true },
+            { text: 'Week 6', isCorrect: false },
+            { text: 'Week 8', isCorrect: false },
+        ],
     },
     {
-      question: 'Which type of muscle tissue is striated and voluntary?',
-      answers: [
-        { text: 'Smooth muscle', isCorrect: false },
-        { text: 'Cardiac muscle', isCorrect: false },
-        { text: 'Skeletal muscle', isCorrect: true },
-        { text: 'Visceral muscle', isCorrect: false },
-      ],
+        question: 'What is the process of forming the three germ layers called?',
+        answers: [
+            { text: 'Neurulation', isCorrect: false },
+            { text: 'Gastrulation', isCorrect: true },
+            { text: 'Organogenesis', isCorrect: false },
+            { text: 'Cleavage', isCorrect: false },
+        ],
     },
     {
-      question: 'What is the primary function of adipose tissue?',
-      answers: [
-        { text: 'Energy storage', isCorrect: true },
-        { text: 'Contraction', isCorrect: false },
-        { text: 'Secretion', isCorrect: false },
-        { text: 'Support', isCorrect: false },
-      ],
+        question: 'Which structure connects the developing embryo to the placenta?',
+        answers: [
+            { text: 'Umbilical cord', isCorrect: true },
+            { text: 'Yolk sac', isCorrect: false },
+            { text: 'Amnion', isCorrect: false },
+            { text: 'Chorion', isCorrect: false },
+        ],
     },
     {
-      question: 'Which type of cartilage is found in the external ear?',
-      answers: [
-        { text: 'Hyaline cartilage', isCorrect: false },
-        { text: 'Fibrocartilage', isCorrect: false },
-        { text: 'Elastic cartilage', isCorrect: true },
-        { text: 'Fibrous cartilage', isCorrect: false },
-      ],
+        question: 'What is the term for the formation of organs and organ systems?',
+        answers: [
+            { text: 'Gastrulation', isCorrect: false },
+            { text: 'Neurulation', isCorrect: false },
+            { text: 'Organogenesis', isCorrect: true },
+            { text: 'Fertilization', isCorrect: false },
+        ],
     },
     {
-      question: 'Which type of bone tissue contains osteocytes within lacunae?',
-      answers: [
-        { text: 'Compact bone', isCorrect: true },
-        { text: 'Spongy bone', isCorrect: false },
-        { text: 'Dense bone', isCorrect: false },
-        { text: 'Irregular bone', isCorrect: false },
-      ],
+        question: 'Which developmental stage is characterized by the formation of a hollow ball of cells?',
+        answers: [
+            { text: 'Zygote', isCorrect: false },
+            { text: 'Morula', isCorrect: false },
+            { text: 'Blastocyst', isCorrect: true },
+            { text: 'Gastrula', isCorrect: false },
+        ],
     },
     {
-      question: 'What is the main component of extracellular matrix in connective tissue?',
-      answers: [
-        { text: 'Collagen', isCorrect: true },
-        { text: 'Elastin', isCorrect: false },
-        { text: 'Keratin', isCorrect: false },
-        { text: 'Fibrin', isCorrect: false },
-      ],
+        question: 'What is the name of the process by which the neural tube is formed?',
+        answers: [
+            { text: 'Gastrulation', isCorrect: false },
+            { text: 'Neurulation', isCorrect: true },
+            { text: 'Organogenesis', isCorrect: false },
+            { text: 'Cleavage', isCorrect: false },
+        ],
     },
     {
-      question: 'Which cell type is responsible for myelination in the central nervous system?',
-      answers: [
-        { text: 'Astrocytes', isCorrect: false },
-        { text: 'Microglia', isCorrect: false },
-        { text: 'Oligodendrocytes', isCorrect: true },
-        { text: 'Schwann cells', isCorrect: false },
-      ],
+        question: 'Which extraembryonic membrane is responsible for gas exchange and waste removal?',
+        answers: [
+            { text: 'Amnion', isCorrect: false },
+            { text: 'Chorion', isCorrect: true },
+            { text: 'Yolk sac', isCorrect: false },
+            { text: 'Allantois', isCorrect: false },
+        ],
     },
     {
-      question: 'What type of epithelial tissue is found in the lining of the urinary bladder?',
-      answers: [
-        { text: 'Simple squamous epithelium', isCorrect: false },
-        { text: 'Stratified squamous epithelium', isCorrect: false },
-        { text: 'Transitional epithelium', isCorrect: true },
-        { text: 'Simple cuboidal epithelium', isCorrect: false },
-      ],
+        question: 'What is the term for the process of cell division that occurs after fertilization?',
+        answers: [
+            { text: 'Gastrulation', isCorrect: false },
+            { text: 'Cleavage', isCorrect: true },
+            { text: 'Organogenesis', isCorrect: false },
+            { text: 'Neurulation', isCorrect: false },
+        ],
     },
     {
-      question: 'Which structure in the skin is responsible for producing sweat?',
-      answers: [
-        { text: 'Sebaceous gland', isCorrect: false },
-        { text: 'Hair follicle', isCorrect: false },
-        { text: 'Sudoriferous gland', isCorrect: true },
-        { text: 'Arrector pili muscle', isCorrect: false },
-      ],
+        question: 'From which germ layer does the lining of the digestive tract develop?',
+        answers: [
+            { text: 'Ectoderm', isCorrect: false },
+            { text: 'Mesoderm', isCorrect: false },
+            { text: 'Endoderm', isCorrect: true },
+            { text: 'None of the above', isCorrect: false },
+        ],
     },
     {
-      question: 'Which type of gland produces hormones that regulate metabolic activities?',
-      answers: [
-        { text: 'Exocrine gland', isCorrect: false },
-        { text: 'Endocrine gland', isCorrect: true },
-        { text: 'Apocrine gland', isCorrect: false },
-        { text: 'Sebaceous gland', isCorrect: false },
-      ],
+        question: 'What is the name of the structure that implants into the uterine wall?',
+        answers: [
+            { text: 'Morula', isCorrect: false },
+            { text: 'Zygote', isCorrect: false },
+            { text: 'Blastocyst', isCorrect: true },
+            { text: 'Gastrula', isCorrect: false },
+        ],
     },
     {
-      question: 'What is the function of osteoclasts in bone tissue?',
-      answers: [
-        { text: 'Bone deposition', isCorrect: false },
-        { text: 'Bone resorption', isCorrect: true },
-        { text: 'Bone formation', isCorrect: false },
-        { text: 'Bone mineralization', isCorrect: false },
-      ],
+        question: 'Which hormone is primarily responsible for maintaining pregnancy?',
+        answers: [
+            { text: 'Estrogen', isCorrect: false },
+            { text: 'Progesterone', isCorrect: true },
+            { text: 'Testosterone', isCorrect: false },
+            { text: 'FSH (Follicle-Stimulating Hormone)', isCorrect: false },
+        ],
     },
     {
-      question: 'Which type of muscle tissue is found in the walls of blood vessels?',
-      answers: [
-        { text: 'Skeletal muscle', isCorrect: false },
-        { text: 'Smooth muscle', isCorrect: true },
-        { text: 'Cardiac muscle', isCorrect: false },
-        { text: 'Striated muscle', isCorrect: false },
-      ],
+        question: 'During which trimester does the fetus undergo the most rapid growth?',
+        answers: [
+            { text: 'First trimester', isCorrect: false },
+            { text: 'Second trimester', isCorrect: false },
+            { text: 'Third trimester', isCorrect: true },
+            { text: 'Growth is consistent throughout pregnancy', isCorrect: false },
+        ],
     },
     {
-      question: 'What type of tissue is responsible for transmitting electrical impulses in the nervous system?',
-      answers: [
-        { text: 'Neuroglia', isCorrect: false },
-        { text: 'Neurons', isCorrect: true },
-        { text: 'Dendrites', isCorrect: false },
-        { text: 'Axons', isCorrect: false },
-      ],
+        question: 'What is the name of the process where the sperm and egg nuclei fuse?',
+        answers: [
+            { text: 'Syngamy', isCorrect: true },
+            { text: 'Meiosis', isCorrect: false },
+            { text: 'Mitosis', isCorrect: false },
+            { text: 'Differentiation', isCorrect: false },
+        ],
     },
     {
-      question: 'Which type of connective tissue is found in tendons and ligaments?',
-      answers: [
-        { text: 'Adipose tissue', isCorrect: false },
-        { text: 'Areolar tissue', isCorrect: false },
-        { text: 'Dense regular connective tissue', isCorrect: true },
-        { text: 'Dense irregular connective tissue', isCorrect: false },
-      ],
+        question: 'Which extraembryonic membrane is involved in the formation of blood cells?',
+        answers: [
+            { text: 'Yolk sac', isCorrect: true },
+            { text: 'Amnion', isCorrect: false },
+            { text: 'Chorion', isCorrect: false },
+            { text: 'Allantois', isCorrect: false },
+        ],
     },
     {
-      question: 'What type of cell junction forms a waterproof barrier in epithelial tissues?',
-      answers: [
-        { text: 'Tight junction', isCorrect: true },
-        { text: 'Gap junction', isCorrect: false },
-        { text: 'Desmosome', isCorrect: false },
-        { text: 'Hemidesmosome', isCorrect: false },
-      ],
+        question: 'What is the term for the birth defect where the spinal cord fails to close properly?',
+        answers: [
+            { text: 'Anencephaly', isCorrect: false },
+            { text: 'Spina bifida', isCorrect: true },
+            { text: 'Cleft palate', isCorrect: false },
+            { text: 'Gastroschisis', isCorrect: false },
+        ],
     },
     {
-      question: 'Which structure is responsible for producing cerebrospinal fluid in the brain?',
-      answers: [
-        { text: 'Arachnoid villi', isCorrect: false },
-        { text: 'Choroid plexus', isCorrect: true },
-        { text: 'Dura mater', isCorrect: false },
-        { text: 'Falx cerebri', isCorrect: false },
-      ],
+        question: 'Which embryonic structure gives rise to the central nervous system?',
+        answers: [
+            { text: 'Notochord', isCorrect: false },
+            { text: 'Neural crest', isCorrect: false },
+            { text: 'Neural tube', isCorrect: true },
+            { text: 'Somites', isCorrect: false },
+        ],
     },
     {
-      question: 'Which type of cell is responsible for bone remodeling?',
-      answers: [
-        { text: 'Osteoblast', isCorrect: false },
-        { text: 'Osteocyte', isCorrect: false },
-        { text: 'Osteoclast', isCorrect: true },
-        { text: 'Chondrocyte', isCorrect: false },
-      ],
+        question: 'What is the normal gestation period (length of pregnancy) in humans?',
+        answers: [
+            { text: '36 weeks', isCorrect: false },
+            { text: '40 weeks', isCorrect: true },
+            { text: '44 weeks', isCorrect: false },
+            { text: '48 weeks', isCorrect: false },
+        ],
     },
     {
-      question: 'What is the main function of goblet cells in epithelial tissues?',
-      answers: [
-        { text: 'Secretion of mucus', isCorrect: true },
-        { text: 'Cellular respiration', isCorrect: false },
-        { text: 'Absorption of nutrients', isCorrect: false },
-        { text: 'Synthesis of hormones', isCorrect: false },
-      ],
+        question: 'Which developmental stage is characterized by the presence of a primitive streak?',
+        answers: [
+            { text: 'Blastocyst', isCorrect: false },
+            { text: 'Gastrula', isCorrect: true },
+            { text: 'Neurula', isCorrect: false },
+            { text: 'Fetus', isCorrect: false },
+        ],
     },
   ];
 
