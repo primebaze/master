@@ -39,6 +39,18 @@ Installation: to run my app on your computer, please follow these steps;
 # Features
 Comprehensive Course Materials: I've carefully curated study materials, detailed illustrations covering all major anatomical topics and subject areas.
 
+## Interactive Quizzes: 
+Test your knowledge with quizzes after each section. These features multiple-choice questions.
+
+## Progress Tracking: 
+The dashboard displays course progress and quiz scores, so users can easily stay on track.
+
+## Detailed 3D Models: 
+Explore rotatable, interactive 3D models of bones, organs, and entire systems to enhance your spatial understanding.
+
+## Study and Course Materials: 
+I have uploaded various course materials that covers all areas of human anatomy. These materials were gotten from the best anatomy teaching universities in the world.
+
 # Project Idea (Problem being solved)
 AnatomyHub aims to revolutionize anatomy education by directly addressing the shortcomings of traditional learning methods:
 
@@ -58,18 +70,6 @@ AnatomyHub's personalized dashboard empowers students to track their learning pr
 AnatomyHub recognizes that learning styles and paces vary. The platform allows students to learn at their own speed, revisit challenging concepts as needed, and explore topics that pique their individual interests.
 
 By overcoming these common obstacles, AnatomyHub strives to equip anatomy students with the tools and resources they need to learn more effectively, efficiently, and enthusiastically.
-
-## Interactive Quizzes: 
-Test your knowledge with quizzes after each section. These features multiple-choice questions.
-
-## Progress Tracking: 
-The dashboard displays course progress and quiz scores, so users can easily stay on track.
-
-## Detailed 3D Models: 
-Explore rotatable, interactive 3D models of bones, organs, and entire systems to enhance your spatial understanding.
-
-## Study and Course Materials: 
-I have uploaded various course materials that covers all areas of human anatomy. These materials were gotten from the best anatomy teaching universities in the world.
 
 ## Using AnatomyHub
 Navigating AnatomyHub is easy! (survey from over 100 testers)
