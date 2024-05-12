@@ -16,7 +16,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <div >
-        <img src="logo.png" alt="" style={{height:50,width:120,objectFit:"contain"}} />
+      <img src="logo.png" alt="" style={{height:50,width:120,objectFit:"contain"}} />
       </div>
       <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
         <MenuIcon/>
