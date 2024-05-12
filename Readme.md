@@ -39,6 +39,26 @@ Installation: to run my app on your computer, please follow these steps;
 # Features
 Comprehensive Course Materials: I've carefully curated study materials, detailed illustrations covering all major anatomical topics and subject areas.
 
+# Project Idea (Problem being solved)
+AnatomyHub aims to revolutionize anatomy education by directly addressing the shortcomings of traditional learning methods:
+
+## Enhancing Engagement: 
+AnatomyHub transforms the often dry and overwhelming experience of studying anatomy into an interactive and visually captivating journey. Engaging quizzes, 3D models, and an intuitive interface foster a deeper connection with the subject matter.
+
+## Transforming Visualization: 
+2D diagrams often fail to capture the intricate spatial relationships within the human body. AnatomyHub's interactive 3D models allow students to manipulate and explore anatomical structures from any angle, providing a more comprehensive understanding.
+
+## Expanding Access: 
+High-quality anatomical resources like atlases and specialized software are often financially inaccessible to many students. AnatomyHub democratizes this knowledge by offering a vast collection of university-level course materials and study aids completely free of charge.
+
+## Monitoring Progress and Identifying Weaknesses: 
+AnatomyHub's personalized dashboard empowers students to track their learning progress, review quiz scores, and pinpoint areas where they may need additional focus or practice.
+
+## Enabling Personalized Learning: 
+AnatomyHub recognizes that learning styles and paces vary. The platform allows students to learn at their own speed, revisit challenging concepts as needed, and explore topics that pique their individual interests.
+
+By overcoming these common obstacles, AnatomyHub strives to equip anatomy students with the tools and resources they need to learn more effectively, efficiently, and enthusiastically.
+
 ## Interactive Quizzes: 
 Test your knowledge with quizzes after each section. These features multiple-choice questions.
 
