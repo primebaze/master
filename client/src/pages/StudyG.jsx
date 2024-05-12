@@ -153,7 +153,7 @@ function StudyG() {
             <DocumentViewer
               url={item.url}
               viewer="url"
-              style={{ width: 910, height: "90vh", marginTop: -590 }}
+              style={{ width: 910, height: "90vh", top: 0, position: "relative" }}
             />
           )}
         </div>
