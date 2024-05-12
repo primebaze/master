@@ -1,17 +1,21 @@
-import { Link } from "@mui/material";
+import { Link, Button, Typography } from "@mui/material";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { useState } from "react";
 import { DocumentViewer } from "react-documents";
+
 
 
 
   function StudyE() {
 
     const [selectedUrl, setSelectedUrl] = useState(null);
-
-    const handleItemClick = (url) => {
-      setSelectedUrl(url);
-    };
+    const [selectedMaterial, setSelectedMaterial] = useState(null);
   
+    const handleItemClick = (url, material) => {
+      setSelectedUrl(url);
+      setSelectedMaterial(material);
+    };
+    
     const data = [
       {
         id: 1,
@@ -56,36 +60,53 @@ import { DocumentViewer } from "react-documents";
   
     return (
       <div>
-      <h2 style={{ marginTop: 30 }}>Embryology Study Materials</h2>
-      <div className="materials-wrapper">
-        {data.map((item) => (
-          <div key={item.id}>
-            <Link
-               style={{  cursor: "pointer"}}
-              onClick={() => handleItemClick(item.url)}
-              to={`/slide/${encodeURIComponent(item.url)}`}
+        <h2 style={{ marginTop: 30 }}>Histology Study Materials</h2>
+        <div className="materials-wrapper">
+          {/* ... (Material links) */}
+          {data.map((item) => (
+            <div key={item.id} className="material-container">
+              <Link
+                style={{ cursor: "pointer" }}
+                onClick={() => handleItemClick(item.url, item)} // Pass the material object
+                to={`/slide/${encodeURIComponent(item.url)}`}
+              >
+                <div>
+                  <img src={item.img} alt="" className="material-image" />
+                  <span className="material-name">{item.name}</span>
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
+  
+        {selectedUrl && (
+          <div style={{ width: 910, height: "90vh", marginTop: -560, position: "fixed" }}>
+            <div style={{ 
+              position: "absolute", 
+              top: 0, 
+              left: 0, 
+              width: "100%", 
+              height: "55px", 
+              backgroundColor: "white",
+              display: "flex",
+              alignItems: "center",
+              padding: "0 20px", // Add padding for better appearance
+              color: "black",
+            }}>
+              <Typography variant="h6">{selectedMaterial.name}</Typography> {/* Display material name */}
+            </div>
+            <DocumentViewer url={selectedUrl} viewer="url" />
+            <Button
+              variant="contained"
+              onClick={() => setSelectedUrl(null)}
+              style={{ position: "absolute", bottom: 10, left: 10 }}
+              startIcon={<ArrowBackIcon />} 
             >
-              <div >
-                <img src={item.img} alt="" className="material-image" />
-                <span className="material-name">{item.name}</span>
-              </div>
-            </Link>
+              Back
+            </Button>
           </div>
-        ))}
+        )} 
       </div>
-      {data.map((item) => (
-          <div key={item.id} >
-            {selectedUrl === item.url && (
-              <DocumentViewer
-                url={item.url}
-                viewer="url"
-                style={{ width: 910, height: "90vh" ,marginTop:-590}}
-              />
-            )}
-          </div>
-        ))}
-    </div>
-
     );
   }
   

@@ -15,8 +15,12 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false); 
   return (
     <div className="navbar">
+      
       <div >
+      <Link to="/">
       <img src="logo.png" alt="" style={{height:50,width:120,objectFit:"contain"}} />
+          </Link>
+      
       </div>
       <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
         <MenuIcon/>

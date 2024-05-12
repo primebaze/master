@@ -1,13 +1,16 @@
-import { Link } from "@mui/material";
+import { Link, Button, Typography } from "@mui/material";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { useState } from "react";
 import { DocumentViewer } from "react-documents";
 
 function StudyG() {
   const [selectedUrl, setSelectedUrl] = useState(null);
-
-  const handleItemClick = (url) => {
-    setSelectedUrl(url);
-  };
+    const [selectedMaterial, setSelectedMaterial] = useState(null);
+  
+    const handleItemClick = (url, material) => {
+      setSelectedUrl(url);
+      setSelectedMaterial(material);
+    };
 
   const data = [
     {
@@ -130,13 +133,14 @@ function StudyG() {
 
   return (
     <div>
-      <h2 style={{ marginTop: 30 }}> Gross Anatomy Study Materials</h2>
+      <h2 style={{ marginTop: 30 }}>Histology Study Materials</h2>
       <div className="materials-wrapper">
+        {/* ... (Material links) */}
         {data.map((item) => (
-          <div key={item.id}>
+          <div key={item.id} className="material-container">
             <Link
               style={{ cursor: "pointer" }}
-              onClick={() => handleItemClick(item.url)}
+              onClick={() => handleItemClick(item.url, item)} // Pass the material object
               to={`/slide/${encodeURIComponent(item.url)}`}
             >
               <div>
@@ -147,17 +151,34 @@ function StudyG() {
           </div>
         ))}
       </div>
-      {data.map((item) => (
-        <div key={item.id}>
-          {selectedUrl === item.url && (
-            <DocumentViewer
-              url={item.url}
-              viewer="url"
-              style={{ width: 910, height: "90vh", top: 0, position: "relative" }}
-            />
-          )}
+
+      {selectedUrl && (
+        <div style={{ width: 910, height: "93vh", position: "fixed", top: 60}}>
+          <div style={{ 
+            position: "absolute", 
+            top: 0, 
+            left: 0, 
+            width: "100%", 
+            height: "55px", 
+            backgroundColor: "white",
+            display: "flex",
+            alignItems: "center",
+            padding: "0 20px", // Add padding for better appearance
+            color: "black",
+          }}>
+            <Typography variant="h6">{selectedMaterial.name}</Typography> {/* Display material name */}
+          </div>
+          <DocumentViewer url={selectedUrl} viewer="url" />
+          <Button
+            variant="contained"
+            onClick={() => setSelectedUrl(null)}
+            style={{ position: "absolute", bottom: 20, left: 10 }}
+            startIcon={<ArrowBackIcon />} 
+          >
+            Back
+          </Button>
         </div>
-      ))}
+      )} 
     </div>
   );
 }
