@@ -28,26 +28,26 @@ import { DocumentViewer } from "react-documents";
       {
         id: 3,
         img: "https://images.unsplash.com/photo-1615505368758-8a3af2a4c379?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YW5hdG9teSUyMG1vZGVsfGVufDB8fDB8fHww",
-        name: "Nervous System",
-        url: "/path/to/nervous_system_presentation.pptx",
+        name: "Ocular Embryology",
+        url: "https://docs.google.com/presentation/d/1_gh0lWVHHU3oKr63NJFYf6dufRwdsb6H/edit?usp=sharing&ouid=116849608406873802250&rtpof=true&sd=true",
       },
       {
         id: 4,
         img: "https://images.unsplash.com/photo-1582380330092-636f9aff6aaf?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YW5hdG9teSUyMG1vZGVsfGVufDB8fDB8fHww",
-        name: "Digestive System",
-        url: "/path/to/digestive_system_presentation.pptx",
+        name: "Embryology 1",
+        url: "https://docs.google.com/presentation/d/1rziGvrKt3FYXPXrekMy70zjLw-5saLE0/edit?usp=sharing&ouid=116849608406873802250&rtpof=true&sd=true",
       },
       {
         id: 5,
         img: "https://images.unsplash.com/photo-1615505368758-8a3af2a4c379?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YW5hdG9teSUyMG1vZGVsfGVufDB8fDB8fHww",
-        name: "Cardiovascular System",
-        url: "/path/to/cardiovascular_system_presentation.pptx",
+        name: "General Embryology",
+        url: "https://docs.google.com/presentation/d/1PBFU0-TFm7O4Lkvol6tzt-xxgFt6isA7/edit?usp=sharing&ouid=116849608406873802250&rtpof=true&sd=true",
       },
       {
         id: 6,
         img: "https://images.unsplash.com/photo-1582380330092-636f9aff6aaf?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YW5hdG9teSUyMG1vZGVsfGVufDB8fDB8fHww",
-        name: "Respiratory System",
-        url: "/path/to/respiratory_system_presentation.pptx",
+        name: "Embryology Of The Heart",
+        url: "https://docs.google.com/presentation/d/124gV9vpKMmatGXdAQihqew4_SbtNJhnZ/edit?usp=sharing&ouid=116849608406873802250&rtpof=true&sd=true",
       },
     ];
   
