@@ -6,7 +6,7 @@ export const register = (req, res) => {
 
     const {fullname, country, currentStatus, university, expectedGraduationYear, reasonToUseAnatomyHub, email} = req.body;
 
-// This is check if an email of a user exist
+// This is to check if an email of a user exist
   db.query(q, [req.body.email], (err, data) => {
     if (err) return res.status(500).json(err);
 

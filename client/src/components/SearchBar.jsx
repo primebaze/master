@@ -27,14 +27,14 @@ export default function SearchBar() {
           width: 600,
           color: 'white',
           '& .MuiInputBase-input::placeholder': {
-            color: 'white', // Placeholder color
+            color: 'white', 
           },
           '& .MuiInputBase-input': {
-            color: 'white', // Font color
+            color: 'white', 
             height: 17,
           },
           '& .MuiOutlinedInput-notchedOutline': {
-            borderColor: 'white', // Border color
+            borderColor: 'white', 
           },
           label: { color: 'white' }
         }}
@@ -42,12 +42,12 @@ export default function SearchBar() {
         renderInput={(params) => <TextField {...params} label="Search Anatomical Materials, Courses, 3D Models, etc" />}
         onInputChange={(event, newValue) => {
           setValue(newValue);
-          setSelectedUrl(null); // Reset selectedUrl when input changes
+          setSelectedUrl(null); 
         }}
         onChange={(event, newValue) => {
           setValue(newValue);
           if (newValue && newValue.url) {
-            window.open(newValue.url, '_blank'); // Open the URL in a new tab
+            window.open(newValue.url, '_blank'); 
           }
         }}
       />

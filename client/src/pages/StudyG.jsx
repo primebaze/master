@@ -135,12 +135,12 @@ function StudyG() {
     <div>
       <h2 style={{ marginTop: 30 }}>Histology Study Materials</h2>
       <div className="materials-wrapper">
-        {/* ... (Material links) */}
+     
         {data.map((item) => (
           <div key={item.id} className="material-container">
             <Link
               style={{ cursor: "pointer" }}
-              onClick={() => handleItemClick(item.url, item)} // Pass the material object
+              onClick={() => handleItemClick(item.url, item)}
               to={`/slide/${encodeURIComponent(item.url)}`}
             >
               <div>
@@ -163,10 +163,10 @@ function StudyG() {
             backgroundColor: "white",
             display: "flex",
             alignItems: "center",
-            padding: "0 20px", // Add padding for better appearance
+            padding: "0 20px", 
             color: "black",
           }}>
-            <Typography variant="h6">{selectedMaterial.name}</Typography> {/* Display material name */}
+            <Typography variant="h6">{selectedMaterial.name}</Typography> 
           </div>
           <DocumentViewer url={selectedUrl} viewer="url" />
           <Button
