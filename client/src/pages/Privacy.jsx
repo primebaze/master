@@ -14,7 +14,7 @@ export default function Privacy() {
                 
                 title="Privacy Policy"
                 width="800" 
-                height="570"
+                height="450"
                 src="https://primebaze.net/privacy.html"
             />
                  <li>For more info about our privacy policy, email privacy@anatomyhub.net</li>
