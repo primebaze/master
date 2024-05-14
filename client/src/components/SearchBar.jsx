@@ -24,10 +24,12 @@ export default function SearchBar() {
         handleHomeEndKeys
         renderOption={(props, option) => <li {...props}>{option.name}</li>}
         sx={{
-          width: 600,
+          width: 500,
+          marginLeft: 10,
           color: 'white',
           '& .MuiInputBase-input::placeholder': {
             color: 'white', 
+          
           },
           '& .MuiInputBase-input': {
             color: 'white', 

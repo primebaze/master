@@ -44,6 +44,15 @@ function Navbar() {
           <Link to="/forum">
             <span>Forum</span>
           </Link>
+          <Link to="/terms">
+            <span>Terms</span>
+          </Link>
+          <Link to="/privacy">
+            <span>Privacy</span>
+          </Link>
+          <Link to="https://example.com">
+            <span>Contact</span>
+          </Link>
           <button onClick={handleLogout}>Logout</button> 
         </div>
         <img src="/settings.svg" alt="" className="icon" />

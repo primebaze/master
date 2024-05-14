@@ -80,4 +80,26 @@ You may launch a quiz at the end of each study section.
 
 # References
 
-Material Ui
+## Frontend Framework:
+
+Material UI -   https://mui.com/material-ui/getting-started/templates/ 
+                UI framework for React, providing pre-built components and styling tools.
+
+CSS Grid    -   https://youtu.be/uuOXPWCh-6o?si=xdUOqML66H7MwV0T 
+
+
+## Backend Libraries:
+
+bcryptjs -      https://www.npmjs.com/package/bcryptjs
+                library for securely hashing passwords in my Node.js applications.
+
+axios -         https://www.axios.com/
+                HTTP client for making API requests.
+
+## Additional Services:
+
+tidio -         tidio.com
+                live chat and chatbot integration, enhancing customer communication on AnatomyHub.
+
+A2 Hosting -    a2hosting.com 
+                web hosting provider Hosting the livechat and the Web App Domain 

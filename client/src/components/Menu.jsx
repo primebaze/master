@@ -18,6 +18,7 @@ const menu = [
         url: "/three",
         icon: "user.svg",
       },
+      
     ],
   },
   {

@@ -25,6 +25,9 @@ import StudyE from "./pages/StudyE";
 import TestE from "./pages/TestE";
 import TestG from "./pages/TestG";
 import Search from "./pages/Search";
+import Terms from "./pages/Terms";
+import Privacy from "./pages/Privacy";
+import Contact from "./pages/Contact";
 
 function App() {
   const Layout = () => {
@@ -52,6 +55,9 @@ function App() {
               <Route path="/studyg" element={<StudyG />} />
               <Route path="/testg" element={<TestG />} />
               <Route path="/search" element={<Search />} />
+              <Route path="/terms" element={<Terms />} />
+              <Route path="/privacy" element={<Privacy />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </div>
         </div>
@@ -127,6 +133,18 @@ function App() {
         {
           path: "/search",
           element: <Search />,
+        },
+        {
+          path: "/terms",
+          element: <Terms />,
+        },
+        {
+          path: "/privacy",
+          element: <Privacy />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
         },
       ],
     },
