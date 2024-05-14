@@ -98,8 +98,8 @@ axios -         https://www.axios.com/
 
 ## Additional Services:
 
-tidio -         tidio.com
+tidio -         https://tidio.com
                 live chat and chatbot integration, enhancing customer communication on AnatomyHub.
 
-A2 Hosting -    a2hosting.com 
+A2 Hosting -    https://a2hosting.com 
                 web hosting provider Hosting the livechat and the Web App Domain 
