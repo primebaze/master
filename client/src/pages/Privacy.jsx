@@ -1,17 +1,3 @@
-import React from 'react';
-
-function PrivacyPolicy() {
-    return (
-        <div>
-            <iframe 
-                src="https://yourwebsite.com/privacy-policy" 
-                title="Privacy Policy"
-                width="100%" 
-                height="800px" // Adjust height as needed
-            />
-        </div>
-    );
-}
 
 export default function Privacy() {
     return (<>
@@ -28,7 +14,7 @@ export default function Privacy() {
                 
                 title="Privacy Policy"
                 width="800" 
-                height="570" // Adjust height as needed
+                height="570"
                 src="https://anatomyhub.net/privacy.html"
             />
                  <li>For more info about our privacy policy, email privacy@anatomyhub.net</li>
